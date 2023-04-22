@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --side-color: rgb(239, 239, 239);
+    --dot-color: rgb(45, 45, 45);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.button-wrapper {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+#roll-button {
+    font-size: 12pt;
+    padding: 0.3rem 1rem;
+}
+
+.dice6 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 200px;
+    transform: rotateX(180deg) rotateY(0) rotateZ(0);
+}
+
+.side {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: var(--side-color);
+    border-color: var(--side-color);
+    border: 2px solid var(--dot-color);
+    display: flex;
+    padding: 16px;
+}
+
+.dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--dot-color);
+}
+
+.side1 {
+    transform: translateZ(100px);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.side2 {
+    transform: translateX(-100px) rotateY(-90deg);
+}
+
+.side3 {
+    transform: translateY(100px) rotateX(-90deg);
+}
+
+.side4 {
+    transform: translateY(-100px) rotateX(90deg);
+}
+
+.side5 {
+    transform: translateX(100px) rotateY(90deg);
+}
+
+.side6 {
+    transform: translateZ(-100px);
+}
+
+.side .dots {
+    display: flex;
+}
+
+.side2 .dot2 {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.side3 .dot2 {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.side3 .dot3 {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.side4 .dots {
+    flex-direction: column;
+}
+
+.side4 .dots-3to4 {
+    margin-left: auto;
+}
+
+.side4 .dot2,
+.side4 .dot4 {
+    margin-top: auto;
+}
+
+.side5 .dots {
+    flex-direction: column;
+}
+
+.side5 .dots-4to5 {
+    margin-left: auto;
+}
+
+.side5 .dot2,
+.side5 .dot5 {
+    margin-top: auto;
+}
+
+.side5 .dot3 {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.side6 .dots {
+    flex-direction: column;
+}
+
+.side6 .dots-4to6 {
+    margin-left: auto;
+}
+
+.side6 .dot2,
+.side6 .dot3,
+.side6 .dot5,
+.side6 .dot6 {
+    margin-top: auto;
+}
