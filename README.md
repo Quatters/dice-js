@@ -1,4 +1,4 @@
 # dice-js
 Pure css/js dice
 
-<img src="./image.png">
+<img src="./image.gif">
